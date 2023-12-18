@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
+
+body {
+    font-family: 'Nova Square', sans-serif;
+    background: linear-gradient(232deg, rgba(0, 15, 30, 0.5), rgba(38, 33, 69, 0.5)), url('/image/bg.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #score-container {
+    text-align: center;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    color: #fff;
+    font-size: 20px;
+  }
+  
+  #score {
+    font-size: 24px;
+    font-weight: bold;
+    color: #4CAF50; /* Green color for the score */
+  }
+  
+  #trophy {
+    width: 300px;
+    margin-top: 50px;
+  }
+  
+  #congratulations {
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 10px;
+    color: #4CAF50; /* Green color for congratulations text */
+  }
+  

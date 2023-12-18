@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Score</title>
+  <link rel="stylesheet" href="score.css">
+</head>
+<body>
+
+<div id="score-container">
+  <p>Your final score is: <span id="score">0</span></p>
+  <img src="/image/trophy.png" alt="Trophy" id="trophy">
+  <p id="congratulations">Congratulations! You've completed the quiz!</p>
+</div>
+
+<script>
+  // Retrieve the score from localStorage and display it
+  var score = localStorage.getItem('quizScore');
+  document.getElementById('score').innerText = score;
+</script>
+
+</body>
+</html>
