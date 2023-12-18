@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+body {
+    font-family: 'Nova Square', sans-serif;
+    background: linear-gradient(232deg, rgba(0, 15, 30, 0.5), rgba(38, 33, 69, 0.5)), url('/image/bg.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#timer-container {
+    position: sticky;
+    top: 0;
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+    color: #fff;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 16px;
+    width: 5%;
+    z-index: 1;
+    cursor: default;
+    border: 2px solid #eeef20;
+}
+
+
+#quiz-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px; /* Adjust this value as needed */
+}
+
+#question-container {
+    position: relative;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 24px;
+    color: #fff;
+    border: 2px solid #ade8f4;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
+    border-radius: 20px;
+    width: 350px; /* Fixed width for the question container */
+    height: 150px; /* Fixed height for the question container */
+    overflow: hidden; /* Hide overflow content */
+    padding: 10px 20px;
+    backdrop-filter: blur(10px);
+    font-size: 15px; /* Adjust this value as needed */
+}
+
+#choices-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.choice {
+    font-size: medium;
+    font-family: 'Nova Square', sans-serif;
+    margin-bottom: 15px;
+    padding: 10px;
+    width: 400px;
+    height: 40px;
+    background-color: #3498db;
+    color: #fff;
+    border: 2px solid #ade8f4;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.choice:hover {
+    background-color: #2980b9;
+}
+
+#navigation-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+#navigation-container button {
+    font-family: 'Nova Square', sans-serif;
+    margin: 5px 20px; /* Add spacing between buttons */
+    padding: 10px;
+    width: 100px;
+    background-color: #3498db;
+    border: 2px solid #ade8f4;
+    color: #fff;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#navigation-container button:hover {
+    background-color: #2980b9;
+}
+
+#score-container {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+#scoreboard {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+#trophy-image {
+    width: 250px;
+  }
+
+#score-text {
+    font-size: 30px;
+    color: #fff;
+}
+
+h2 {
+    font-size: 24px;
+    color: #e74c3c;
+  }

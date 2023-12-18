@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="groupQ.css">
+  <title>Calqlated</title>
+</head>
+<body>
+  <div id="timer-container">
+    <span id="timer-minutes">00</span>:<span id="timer-seconds">10</span>
+  </div>
+  <div id="quiz-container">
+    <div id="question-container">
+      <h1 id="question-text"></h1>
+    </div>
+    <div id="choices-container">
+      <button class="choice" onclick="checkAnswer(0)"></button>
+      <button class="choice" onclick="checkAnswer(1)"></button>
+      <button class="choice" onclick="checkAnswer(2)"></button>
+    </div>
+    <div id="navigation-container">
+      <button onclick="prevQuestion()">Back</button>
+      <button onclick="nextQuestion()">Next</button>
+    </div>
+  </div>
+  <div id="score-container">
+    <div id="scoreboard">
+      <h2>Scoreboard</h2>
+    <img src="/image/trophy.png" alt="Trophy" id="trophy-image">
+    <h2>Congratulations!</h2>
+    <h1 id="score-text"></h1>
+  </div>
+  <script src="confetti.js"></script>
+  <script src="groupQ.js"></script>
+</body>
+</html>
