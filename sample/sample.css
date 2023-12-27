@@ -20,6 +20,28 @@ body {
     text-align: center;
   }
   
+  #timer {
+    font-size: 20px;
+    margin-top: 10px;
+    color: #fff;
+    text-align: center; /* Center the timer horizontally */
+    position: fixed;
+    top: 0;
+    left: 50%; /* Move to the center horizontally */
+    transform: translateX(-50%); 
+    width: 100%;
+    padding: 10px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+
+  #timer-bar {
+    height: 20px;
+    background-color: #ff002b;
+    width: 100%;
+    transition: width 1s linear;
+  } 
+  
   .question-container {
     margin-bottom: 20px;
     opacity: 0;
