@@ -38,6 +38,15 @@ header {
     text-transform: uppercase;
     letter-spacing: 3px;
 }
+
+.arrow-icon a{
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+}
   
 #group {
     text-align: center;

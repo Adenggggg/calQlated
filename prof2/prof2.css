@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@200&display=swap');
 
 body {
     font-family: 'Arial', sans-serif; font-family: 'Nova Square', sans-serif;
@@ -13,6 +14,15 @@ body {
     min-height: 100vh; 
 }
 
+.arrow-icon a{
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+}
+
 #container {
     padding: 20px;
     border-radius: 8px;
@@ -23,14 +33,38 @@ body {
 }
 
 #photoInput {
-    width: 100%; /* Adjust the width as needed */
-    display: block;
+    display: none;
+}
+
+.custom-upload-label {
+    display: inline-block;
     padding: 10px;
-    box-sizing: border-box;
-    border: none; /* Remove the border */
-    border-radius: 4px; /* Remove any existing border-radius */
     color: #fff;
     border: 2px solid #ade8f4;
+    border-style: dashed;
+    cursor: pointer;
+    border-radius: 8px;
+    background: transparent;
+    width: 600px;
+}
+
+#mathInput {
+    color: #fff;
+    border: 2px solid #ade8f4;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    background: transparent;
+    border-radius: 8px;
+    outline: none;
+    font-family: 'Urbanist', sans-serif; /* Use the specified font family */
+}
+
+#mathInput::placeholder {
+    color: #fff;
+    text-align:  center;
+    font-style: italic;
 }
 
 label {
@@ -38,6 +72,7 @@ label {
     margin-bottom: 5px;
     color: #fff;
     font-size: 20px;
+    text-align: center;
 }
 
 textarea,
@@ -64,6 +99,13 @@ input[type="file"] {
     margin-right: 2px;
 }
 
+#correct::placeholder,
+#solution::placeholder,
+#mathInput::placeholder {
+    color: #fff; /* Set the placeholder text color to white */
+    font-family: 'Urbanist', sans-serif;
+}
+
 button {
     font-family: 'Nova Square', sans-serif;
     padding: 10px;
@@ -75,11 +117,36 @@ button {
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    margin: 0 auto;
-    margin: 5px 110px;
+    margin: 5px auto 0;
+    display: block
 }
 
 button:hover {
+    background-color: #2980b9;
+}
+
+.done-btn a{
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+}
+
+.done-btn {
+    font-family: 'Nova Square', sans-serif;
+    padding: 10px;
+    width: 100px;
+    background-color: #3498db;
+    border: 2px solid #ade8f4;
+    color: #fff;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 15px auto 0;
+    display: block;
+}
+
+.done-btn:hover {
     background-color: #2980b9;
 }
 
